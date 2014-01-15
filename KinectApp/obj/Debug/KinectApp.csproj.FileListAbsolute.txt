@@ -1,0 +1,19 @@
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\Interop.SpeechLib.dll
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.csproj.ResolveComReference.cache
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\bin\Debug\Kinect.ico
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\bin\Debug\NO FEED.png
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\bin\Debug\KinectApp.exe
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\bin\Debug\KinectApp.pdb
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.csprojResolveAssemblyReference.cache
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\MainWindow.baml
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\MainWindow.g.cs
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\App.g.cs
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp_Content.g.cs
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp_MarkupCompile.cache
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.g.resources
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.Properties.Resources.resources
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.csproj.GenerateResource.Cache
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.exe
+C:\Users\appysci\Documents\Visual Studio 2012\Projects\KinectApp\KinectApp\obj\Debug\KinectApp.pdb
+C:\Users\Dominic\Google Drive\School\Courses\Past\CEN 3213 - Embedded Systems Programming\KinectApp\KinectApp\KinectApp\obj\Debug\KinectApp.csproj.ResolveComReference.cache
+C:\Users\Dominic\Google Drive\School\Courses\Past\CEN 3213 - Embedded Systems Programming\KinectApp\KinectApp\KinectApp\obj\Debug\KinectApp.pdb

@@ -1,0 +1,45 @@
+﻿<Window x:Class="KinectApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kinect Control" Height="600" Width="1200" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="Kinect.ico" Closing="Kinect_Main_Closing" Loaded="Kinect_Main_Loaded">
+    <Grid Margin="0,0,4,0">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="641*"/>
+        </Grid.RowDefinitions>
+        
+        <CheckBox x:Name="gestureBox" Content="Gesture Control" HorizontalAlignment="Left" Margin="689,26,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="113" Checked="gestureBox_Checked" Unchecked="gestureBox_Unchecked" RenderTransformOrigin="0.606,0.467"/>
+        <CheckBox x:Name="feedBox" Content="Direct Feed" HorizontalAlignment="Left" Margin="689,86,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="80" Checked="feedBox_Checked" Unchecked="feedBox_Unchecked"/>
+        <CheckBox x:Name="IRbox" Content="IR Control" HorizontalAlignment="Left" Margin="689,66,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="80" Checked="IRbox_Checked" Unchecked="IRbox_Unchecked"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="10,0,0,0" TextWrapping="Wrap" Text="Kinect PC Control Panel" VerticalAlignment="Top" Width="535" FontSize="16"/>
+        <Label Content="Features" HorizontalAlignment="Left" Height="25" Margin="689,1,0,0" Grid.Row="1" VerticalAlignment="Top" Width="80"/>
+        <CheckBox x:Name="trayBox" Content="Enable Tray Notifications" HorizontalAlignment="Left" Margin="689,106,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="trayBox_Checked" Height="17" Width="152" Unchecked="trayBox_Unchecked" IsChecked="True"/>
+        <Image x:Name="Image" Margin="10,21,389,44" Source="NO FEED.png" Grid.Row="1" Cursor="None"/>
+        <CheckBox x:Name="voiceBox" Content="Voice Control&#xD;&#xA;" HorizontalAlignment="Left" Margin="689,46,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" Height="15" Checked="voiceBox_Checked" Unchecked="voiceBox_Unchecked"/>
+        <TextBlock x:Name="test" HorizontalAlignment="Left" Height="125" Margin="689,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Text="No message to display yet"/>
+        <Label x:Name="testLabel" Content="Audio Debug" HorizontalAlignment="Left" Height="29" Margin="685,160,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104"/>
+        <TextBlock x:Name="test2" HorizontalAlignment="Left" Height="122" Margin="689,321,0,0" Grid.Row="1" TextWrapping="Wrap" Text="No message to display yet" VerticalAlignment="Top" Width="155"/>
+        <Label x:Name="test2label" Content="Skeleton Debug" HorizontalAlignment="Left" Height="29" Margin="684,303,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104"/>
+        <CheckBox x:Name="touch" Content="Touch Mode&#xD;&#xA;" HorizontalAlignment="Left" Height="19" Margin="689,128,0,0" Grid.Row="1" VerticalAlignment="Top" Width="99" Checked="Touch_Checked" Unchecked="touch_Unchecked"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="652,18,0,0" VerticalAlignment="Top" Height="488" Width="18" Orientation="Vertical" SmallChange="1" Maximum="480" ValueChanged="slider_ValueChanged" IsDirectionReversed="True" Grid.Row="1"/>
+        <Slider x:Name="leftAdjust" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="638" Maximum="640" SmallChange="1" Margin="9,24,0,0" Grid.RowSpan="2" ValueChanged="leftAdjust_ValueChanged"/>
+        <Slider x:Name="rightAdjust" HorizontalAlignment="Left" Height="20" Margin="10,507,0,0" Grid.Row="1" VerticalAlignment="Top" Width="642" Value="640" SmallChange="1" Maximum="640" ValueChanged="rightAdjust_ValueChanged"/>
+        <TextBox x:Name="X_Res" HorizontalAlignment="Left" Height="25" Margin="689,472,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" MaxLines="1" MaxLength="4" IsUndoEnabled="True" IsReadOnly="True"/>
+        <Label x:Name="res1" Content="Detected Resolution&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="24" Margin="683,451,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="Y_Res" HorizontalAlignment="Left" Height="25" Margin="783,472,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" MaxLines="1" MaxLength="4" IsUndoEnabled="True" IsReadOnly="True"/>
+        <Label x:Name="res2" Content="x" HorizontalAlignment="Left" Height="29" Margin="763,472,0,0" Grid.Row="1" VerticalAlignment="Top" Width="19"/>
+        <TextBlock x:Name="test3" HorizontalAlignment="Left" Height="125" Margin="884,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Text="No message to display yet"/>
+        <Label x:Name="test3label" Content="Touch Debug" HorizontalAlignment="Left" Height="29" Margin="879,160,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104"/>
+        <TextBlock x:Name="instruction1" HorizontalAlignment="Left" Height="49" Margin="882,308,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Enter the distance from the top of the monitor to the kinect in mm" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="topToKinect" HorizontalAlignment="Left" Height="27" Margin="882,358,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" MaxLines="1" MaxLength="4"/>
+        <TextBlock x:Name="instruction2" HorizontalAlignment="Left" Height="49" Margin="882,388,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Enter the distance from the bottom of the monitor to the kinect in mm" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="botToKinect" HorizontalAlignment="Left" Height="27" Margin="882,437,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" MaxLines="1" MaxLength="4"/>
+
+    </Grid>
+</Window>
